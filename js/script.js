@@ -2,6 +2,7 @@ let minutes = 40
 let seconds = 00
 let blocks = document.querySelectorAll(".time")
 
+blocks.innerHTML = "05"
 document.getElementById("minutes").innerHTML = minutes
 
 if (minutes < 10){
