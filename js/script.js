@@ -17,7 +17,6 @@ if (seconds < 10){
     document.getElementById("seconds").innerHTML = seconds
 }
 
-
 function counter(){
     seconds --;
 
@@ -67,7 +66,7 @@ function check(){
         sound.play();
     }
 
-    if (minutes == 20 && seconds == 0){
+    if (minutes == 15 && seconds == 0){
         blocks[3].style.backgroundColor = "green";
         let sound = new Audio("sounds/bgm_rankup_nor.ogg")
         sound.play();
@@ -88,4 +87,8 @@ document.addEventListener("keydown",function(e){
 
 document.addEventListener("click",function(){
     counter();
+})
+
+document.addEventListener("dblClick",function(){
+    document.location.reload;
 })
