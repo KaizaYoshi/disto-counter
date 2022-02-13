@@ -85,3 +85,7 @@ document.addEventListener("keydown",function(e){
         counter();
     }
 })
+
+document.addEventListener("click",function(){
+    counter();
+})
